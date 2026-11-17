@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Libra - Library Management</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+<body class="bg-slate-50">
+
+    <div class="min-h-screen flex">
+
+        <!-- SIDEBAR -->
+        <aside class="w-64 bg-emerald-950 text-white">
+
+            <!-- LOGO -->
+            <div class="px-6 py-6">
+                <h1 class="text-2xl font-bold">
+                    Perpustakaan<span class="text-emerald-400">.</span>
+                </h1>
+
+                <p class="text-xs text-emerald-200 mt-1">
+                    Sistem Manajemen Perpustakaan
+                </p>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="px-4 mt-4">
+
+                <a href="index.html"
+                   class="block px-4 py-3 rounded-lg bg-emerald-700 text-white mb-2">
+                    Dashboard
+                </a>
+
+                <a href="data-buku.html"
+                   class="block px-4 py-3 rounded-lg text-emerald-100 hover:bg-emerald-800 mb-2">
+                    Data Buku
+                </a>
+
+                <a href="tambah-buku.html"
+                   class="block px-4 py-3 rounded-lg text-emerald-100 hover:bg-emerald-800 mb-2">
+                    Tambah Buku
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex-1 p-8">
+
+<main class="flex-1 p-8">
+
+    <!-- HEADER -->
+    <header class="flex items-center justify-between mb-8">
+
+        <div>
+            <h2 class="text-2xl font-bold text-slate-800">
+                Dashboard
+            </h2>
+
+            <p class="text-sm text-slate-500 mt-1">
+                Selamat datang di sistem manajemen perpustakaan.
+            </p>
+        </div>
+
+        <!-- ADMIN PROFILE -->
+        <div class="flex items-center gap-3">
+
+            <div class="text-right">
+                <p class="text-sm font-semibold text-slate-800">
+                    Administrator
+                </p>
+
+                <p class="text-xs text-slate-500">
+                    Admin Perpustakaan
+                </p>
+            </div>
+
+            <div class="w-10 h-10 rounded-full bg-emerald-100
+                        flex items-center justify-center
+                        text-emerald-700 font-bold">
+                A
+            </div>
+
+        </div>
+
+    </header>
+
+<!-- STATISTICS CARDS -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+
+    <!-- CARD 1 -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <p class="text-sm text-slate-500">Total Buku</p>
+        <h3 class="text-3xl font-bold text-slate-800 mt-2">1.250</h3>
+        <p class="text-xs text-emerald-600 mt-3">Koleksi buku tersedia</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <p class="text-sm text-slate-500">Total Anggota</p>
+        <h3 class="text-3xl font-bold text-slate-800 mt-2">320</h3>
+        <p class="text-xs text-emerald-600 mt-3">Anggota terdaftar</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <p class="text-sm text-slate-500">Sedang Dipinjam</p>
+        <h3 class="text-3xl font-bold text-slate-800 mt-2">48</h3>
+        <p class="text-xs text-emerald-600 mt-3">Buku dalam peminjaman</p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="bg-white p-6 rounded-xl border border-slate-200">
+        <p class="text-sm text-slate-500">Terlambat</p>
+        <h3 class="text-3xl font-bold text-slate-800 mt-2">5</h3>
+        <p class="text-xs text-red-500 mt-3">Perlu dikembalikan</p>
+    </div>
+
+</section>
+
+<!-- RECENT BORROWINGS -->
+<section class="bg-white rounded-xl border border-slate-200 p-6">
+
+    <div class="flex items-center justify-between mb-6">
+        <div>
+            <h3 class="text-lg font-bold text-slate-800">
+                Recent Borrowings
+            </h3>
+            <p class="text-sm text-slate-500 mt-1">
+                Aktivitas peminjaman buku terbaru.
+            </p>
+        </div>
+
+        <a href="data-buku.html"
+           class="text-sm font-semibold text-emerald-700 hover:text-emerald-900">
+            Lihat Data Buku →
+        </a>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+
+            <thead>
+                <tr class="text-slate-500 border-b border-slate-200">
+                    <th class="py-3 font-medium">Nama Peminjam</th>
+                    <th class="py-3 font-medium">Judul Buku</th>
+                    <th class="py-3 font-medium">Tanggal Pinjam</th>
+                    <th class="py-3 font-medium">Status</th>
+                </tr>
+            </thead>
+
+            <tbody class="text-slate-700">
+
+                <tr class="border-b border-slate-100">
+                    <td class="py-4">Andi Pratama</td>
+                    <td class="py-4">Laskar Pelangi</td>
+                    <td class="py-4">15 Nov 2026</td>
+                    <td class="py-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-medium">
+                            Dipinjam
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="border-b border-slate-100">
+                    <td class="py-4">Siti Rahma</td>
+                    <td class="py-4">Bumi Manusia</td>
+                    <td class="py-4">14 Nov 2026</td>
+                    <td class="py-4">
+                        <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-medium">
+                            Dikembalikan
+                        </span>
+                    </td>
+                </tr>
+
+                <tr class="border-b border-slate-100">
+                    <td class="py-4">Budi Santoso</td>
+                    <td class="py-4">Filosofi Teras</td>
+                    <td class="py-4">13 Nov 2026</td>
+                    <td class="py-4">
+                        <span class="px-3 py-1 rounded-full bg-red-100 text-red-700 text-xs font-medium">
+                            Terlambat
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="py-4">Dina Amelia</td>
+                    <td class="py-4">Atomic Habits</td>
+                    <td class="py-4">12 Nov 2026</td>
+                    <td class="py-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-medium">
+                            Dipinjam
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+
+</main>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</body>
+</html>
